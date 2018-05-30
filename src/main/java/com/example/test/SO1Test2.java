@@ -13,8 +13,6 @@ public class SO1Test2 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Tree t1 = new Tree(5, new Tree(3, new Tree(20, null, null), new Tree(21, null, null)),
 				new Tree(10, new Tree(1, null, null), null));
 

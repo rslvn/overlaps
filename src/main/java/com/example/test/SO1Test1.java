@@ -15,33 +15,31 @@ public class SO1Test1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] a = {1,4,-1,3,2};
+		int[] a = { 1, 4, -1, 3, 2 };
 		int length = solution(a);
 		System.out.println(length);
 	}
 
 	private static int solution(int[] a) {
-
-		if (a == null ) {
+		if (a == null) {
 			return -1;
 		}
 
 		if (a.length <= 2 || a[0] != 1) {
 			return -1;
 		}
-		
-		
-		int length = 1;
-		int index = 1;
-		
-		
-	
-		while (a[index] != -1) {			
+
+		int previousIndex = 0;
+		int index = 0;
+
+		while (a[index] != -1) {
+			previousIndex = index;
 			index = a[index];
-			length = a[index-1];
+			System.out.printf("p: %d, i: %d", previousIndex, index);
+			System.out.println();
 		}
 
-		return length;
+		return previousIndex;
 	}
 
 }
